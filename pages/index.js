@@ -46,6 +46,12 @@ export default function Home() {
   return (
     <>
 
+    <Head>
+
+      <title>ERP Clone Test - ehe~</title>
+
+    </Head>
+
     <div className="flex">
       <div id="sidebarContainer" className="w-80">
         <aside className="relative h-full bg-purple-700 dark:bg-black">
