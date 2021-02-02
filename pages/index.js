@@ -66,95 +66,39 @@ export default function Home() {
             <div className="inline-flex my-10"></div>
 
             <div className="inline-flex mx-10">
-              <AnimatePresence>
-                { sidebarMinimized
-                  ? (<>
-                  <motion.span
-                    initial={{ x: 20, opacity: 0}}
-                    animate={{ x: 0, opacity: 1}}
-                    exit={{ opacity: 0 }}
-                    className="mx-2 my-auto">
-                      <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
-                    </motion.span>
-                    </>)
 
-                  : (<><span className="mx-2 my-auto">
+                <span className="mx-2 my-auto">
                   <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
-                    </span></>)
+                </span>
 
-                  }
-              </AnimatePresence>
-
-              { ! sidebarMinimized && <h6 className="mx-5 text-white text-md">Profile</h6> }
+                 <h6 className="mx-5 text-white text-md">Profile</h6>
             </div>
 
             <div className="inline-flex mx-10">
 
-              <AnimatePresence>
-                { sidebarMinimized
-                  ? (<>
-                  <motion.span
-                    initial={{ x: 20, opacity: 0}}
-                    animate={{ x: 0, opacity: 1}}
-                    exit={{ opacity: 0 }}
-                    className="mx-2 my-auto">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
-                    </motion.span>
-                    </>)
+                <span className="mx-2 my-auto">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+                </span>
 
-                  : (<><span className="mx-2 my-auto">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
-                    </span></>)
-
-                  }
-              </AnimatePresence>
-              { ! sidebarMinimized && <h6 className="mx-5 text-white text-md">Dashboard</h6> }
+              <h6 className="mx-5 text-white text-md">Dashboard</h6>
             </div>
 
             <div className="inline-flex mx-10">
 
-              <AnimatePresence>
-                { sidebarMinimized
-                  ? (<>
-                  <motion.span
-                    initial={{ x: 20, opacity: 0}}
-                    animate={{ x: 0, opacity: 1}}
-                    exit={{ opacity: 0 }}
-                    className="mx-2 my-auto">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-white"  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
-                    </motion.span>
-                    </>)
 
-                  : (<><span className="mx-2 my-auto">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-white"  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
-                    </span></>)
-
-                  }
-              </AnimatePresence>
-              { ! sidebarMinimized && <h6 className="mx-5 text-white text-md">Leave</h6> }
+              <span className="mx-2 my-auto">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-white"  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+              </span>
+              <h6 className="mx-5 text-white text-md">Leave</h6>
             </div>
 
             <div className="inline-flex mx-10">
 
-              <AnimatePresence>
-                { sidebarMinimized
-                  ? (<>
-                  <motion.span
-                    initial={{ x: 20, opacity: 0}}
-                    animate={{ x: 0, opacity: 1}}
-                    exit={{ opacity: 0 }}
-                    className="mx-2 my-auto">
-                      <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
-                    </motion.span>
-                    </>)
+                <span className="mx-2 my-auto">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
+                </span>
 
-                  : (<><span className="mx-2 my-auto">
-                      <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
-                    </span></>)
-
-                  }
-              </AnimatePresence>
-              { ! sidebarMinimized && <h6 className="mx-5 text-white text-md">Claim</h6> }
+              <h6 className="mx-5 text-white text-md">Claim</h6>
             </div>
           </div>
         </aside>
