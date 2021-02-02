@@ -54,7 +54,7 @@ export default function Home() {
 
     <div className="flex">
 
-      { ! sidebarMinimized && <>
+      {  sidebarMinimized && <>
 
       <div  className="fixed w-full h-full md:hidden">
         <aside className="relative h-full bg-purple-700 dark:bg-black">
